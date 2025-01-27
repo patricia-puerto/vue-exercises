@@ -6,16 +6,19 @@ const title = 'HERE IS THE PROPS TITLE'
 </script>
 
 <template>
-  <header>
-    <div>
-      <h1>You did it!</h1>
-    </div>
-  </header>
   <section>
-    <TheTitle :propTitle="title" />
+    <TheTitle :propTitle="title">
+      <h3 class="slot">Here is the slot title</h3>
+    </TheTitle>
   </section>
 
   <RouterView />
 </template>
 
-<style scoped></style>
+<style scoped>
+.slot {
+  color: #34585f;
+  margin-top: 0.4em;
+  margin-left: 1em;
+}
+</style>

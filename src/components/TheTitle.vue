@@ -7,6 +7,7 @@ defineProps({
 <template>
   <h2 class="title">Here is THE TITLE</h2>
   <h3 class="props">{{ propTitle }}</h3>
+  <slot></slot>
 </template>
 <style scoped>
 .title {
