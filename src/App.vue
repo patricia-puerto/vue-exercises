@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import ExampleComponent from '@/components/ExampleComponent.vue'
+import TheTitle from '@/components/TheTitle.vue'
 </script>
 
 <template>
@@ -10,7 +10,7 @@ import ExampleComponent from '@/components/ExampleComponent.vue'
     </div>
   </header>
   <section>
-    <ExampleComponent />
+    <TheTitle />
   </section>
 
   <RouterView />
