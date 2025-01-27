@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import TheTitle from '@/components/TheTitle.vue'
+
+const title = 'HERE IS THE PROPS TITLE'
 </script>
 
 <template>
@@ -10,7 +12,7 @@ import TheTitle from '@/components/TheTitle.vue'
     </div>
   </header>
   <section>
-    <TheTitle />
+    <TheTitle :propTitle="title" />
   </section>
 
   <RouterView />
