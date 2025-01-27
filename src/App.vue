@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import TheTitle from '@/components/TheTitle.vue'
+import TheCounter from '@/components/TheCounter.vue'
 
 const title = 'HERE IS THE PROPS TITLE'
 </script>
@@ -10,6 +11,7 @@ const title = 'HERE IS THE PROPS TITLE'
     <TheTitle :propTitle="title">
       <h3 class="slot">Here is the slot title</h3>
     </TheTitle>
+    <TheCounter />
   </section>
 
   <RouterView />

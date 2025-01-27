@@ -3,9 +3,10 @@ import { defineProps } from 'vue';
 defineProps({
   propTitle: String,
 });
+const title = 'Here is THE TITLE';
 </script>
 <template>
-  <h2 class="title">Here is THE TITLE</h2>
+  <h2 class="title">{{ title }}</h2>
   <h3 class="props">{{ propTitle }}</h3>
   <slot></slot>
 </template>
